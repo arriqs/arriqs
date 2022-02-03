@@ -17,6 +17,7 @@
     margin-top: 0;
     top: 0.25em;
     left: 0.5em;
+    pointer-events: none;
   }
   
   #p1 {
@@ -24,7 +25,7 @@
     position: absolute;
     top: 3em;
     right: 3em;
-    display: flex;
+    display: none; /* flex; */
     flex-direction: column;
     align-content:right;
     color: rgba(0,0,0,0);
