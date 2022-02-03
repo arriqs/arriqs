@@ -1,0 +1,132 @@
+* {
+    z-index: 5;
+    color: white;
+  }
+  
+  html, body {
+    padding: 0;
+    margin: 0;
+    background: black;
+    overflow: hidden;
+  }
+  
+  .mIsFor {
+    font-size: 6em;
+    font-family: 'Archivo Black', sans-serif;
+    position: fixed;
+    margin-top: 0;
+    top: 0.25em;
+    left: 0.5em;
+  }
+  
+  #p1 {
+    width:75vw;
+    position: absolute;
+    top: 3em;
+    right: 3em;
+    display: flex;
+    flex-direction: column;
+    align-content:right;
+    color: rgba(0,0,0,0);
+    z-index: 10;
+  }
+  
+  @media (max-width: 600px) {
+    .mIsFor {
+      font-weight: 300;
+      font-size: 3em;
+      font-family: 'Archivo Black', sans-serif;
+      position: fixed;
+      margin-top: 0;
+      top: 0.15em;
+      left: 0.15em;
+    }
+  }
+  
+  #circle-1 {
+    display:flex;
+    justify-content: flex-end;
+    margin-top: 2em;
+    color: red
+  }
+  
+  #circle-1-text {
+    fill: white;
+    transition: all .5s ease;
+  }
+  
+  #circle-1-text:hover {
+    fill: blue;
+    cursor: pointer;
+    transition: all 1s ease
+  }
+  
+  #circle-1 svg { 
+    -webkit-animation-name: rotate;
+       -moz-animation-name: rotate;
+        -ms-animation-name: rotate;
+         -o-animation-name: rotate;
+            animation-name: rotate;
+    -webkit-animation-duration: 5s;
+       -moz-animation-duration: 5s;
+        -ms-animation-duration: 5s;
+         -o-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+       -moz-animation-iteration-count: infinite;
+        -ms-animation-iteration-count: infinite;
+         -o-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+       -moz-animation-timing-function: linear;
+        -ms-animation-timing-function: linear;
+         -o-animation-timing-function: linear;
+            animation-timing-function: linear;
+  }
+  
+  @-webkit-keyframes rotate {
+      from { -webkit-transform: rotate(-360deg); }
+      to { -webkit-transform: rotate(0); }
+  }
+  @-moz-keyframes rotate {
+      from { -moz-transform: rotate(-360deg); }
+      to { -moz-transform: rotate(0); }
+  }
+  @-ms-keyframes rotate {
+      from { -ms-transform: rotate(360deg); }
+      to { -ms-transform: rotate(0); }
+  }
+  @-o-keyframes rotate {
+      from { -o-transform: rotate(-360deg); }
+      to { -o-transform: rotate(0); }
+  }
+  @keyframes rotate {
+      from { transform: rotate(-360deg); }
+      to { transform: rotate(0); }
+  }
+  
+  .video-container{
+    width: 100vw;
+    height: 100vh;
+  }
+  
+   iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    transform: translate(-50%, -53%);
+     z-index: 1
+  }
+  
+  @media (min-aspect-ratio: 16/9) {
+    .video-container iframe {
+      height: 56.25vw;
+    }
+  }
+  @media (max-aspect-ratio: 16/9) {
+    .video-container iframe {
+      width: 177.78vh;
+    }
+  }
