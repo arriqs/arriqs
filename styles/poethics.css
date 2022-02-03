@@ -25,11 +25,12 @@
     position: absolute;
     top: 3em;
     right: 3em;
-    display: none; /* flex; */
+    display:flex;
     flex-direction: column;
     align-content:right;
     color: rgba(0,0,0,0);
     z-index: 10;
+    pointer-events: none;
   }
   
   @media (max-width: 600px) {
