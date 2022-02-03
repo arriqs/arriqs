@@ -27,7 +27,8 @@
     display: flex;
     flex-direction: column;
     align-content:right;
-    color: rgba(0,0,0,0)
+    color: rgba(0,0,0,0);
+    z-index: 10;
   }
   
   @media (max-width: 600px) {
