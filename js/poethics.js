@@ -4,7 +4,7 @@ var str1 = "and";
 var str2 = "."
 var regexAnd = new RegExp(str1);
 var regexPeriod = new RegExp(str2);
-var rotatingText = ["Mary and", "Maryam", "mass incarceration.", "Maryam and", "Moses", "Moses and", "make-believe.", "McKenzie.", "miracle", "miracle and", "mayhem", "mayhem and", "mass incarceration.", "migrant", "migrant and", "major", "major and", "magic", "magic and", "metastasization.", "muscle", "muscle and", "memory", "memory and", "mitochondria.", "minor", "minor and", "malevolence", "malevolence and", "manna.", "maternal", "maternal and", "mule", "mule and", "music.", "meal", "meal and", "minute", "minute and", "mandrill.", "mammal", "mammal and", "make-up", "make-up and", "mercury.", "must be", "must be and", "maybe", "maybe and", "much.", "Archive."]; 
+var rotatingText = ["Mary and", "Maryam", "Mars", "mass", "mass and", "mass extinction", "mass incarceration.", "Magellan", "Moses", "Moses and", "make-believe.", "moon", "McKenzie.", "miracle", "miracle and", "mayhem", "mayhem and", "M31.", "migrant", "migrant and", "magnitude", "major", "major and", "magic", "magic and", "metastasization.", "muscle", "muscle and", "memory", "memory and", "mitochondria.", "magnetosphere", "minor", "minor and", "malevolence", "malevolence and", "manna.", "maternal", "maternal and", "mule", "mule and", "music.", "meal", "meal and", "minute", "minute and", "mandrill.", "mammal", "mammal and", "make-up", "make-up and", "mercury.", "must be", "must be and", "maybe", "maybe and", "much.", "Archive."]; 
 const mArchive = document.querySelector(".mArchive");
 const mArchiveTL = gsap.timeline({repeat: -1, yoyo: true});
 
